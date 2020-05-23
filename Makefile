@@ -8,7 +8,7 @@ install-requirements:
 
 
 build:
-	@cp .example.variables.env .variables.env
+	@cp -n .example.variables.env .variables.env
 	@docker-compose build --force-rm
 
 
